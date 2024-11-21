@@ -1,0 +1,232 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+.content span{
+    color: rgb(223, 61, 115);
+}
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 16px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+  }
+  .logo{
+    color:rgb(223, 61, 115);
+    font-size: 2.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+ 
+  .nav-links li a:hover {
+    background-image: linear-gradient(25deg,#db3bb9,rgb(223, 61, 115));
+    border-radius: 5px;
+  }
+  
+  /* Mobile Styles */
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      height: 390px;
+      right: 50px;
+      background:rgba(255,255, 255, 0.2) ;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(3px);
+    }
+   .nav-links li {
+    text-align: center;
+    margin-left: 0%;
+    word-spacing: normal;
+    margin-bottom: 30px;
+   }
+   .nav-links li a{
+    color: black;
+    font-weight: 700;
+    font-size: 23px;
+   }
+   .nav-links li:last-child{
+    margin-bottom: 0%;
+   }
+   .nav-links li a:hover {
+    background-image: linear-gradient(25deg,#da49c1,rgb(223, 61, 115));
+    color: rgb(248, 202, 225);
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+      margin-left: 89%;
+      margin-top: -40px;
+    }
+
+  }
+
+/* Parallax Effect */
+.parallax {
+    background-image: url('https://i.pinimg.com/originals/12/f8/33/12f833223d83f7564098ced0d24108f6.gif'); /* Change to your desired image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+#projects .p-box  .p1:nth-child(n){
+    width: 200px;
+    height: auto;
+    background-image: linear-gradient(to left,#db3bb9,rgb(223, 61, 115));
+    margin:10px;
+    color: #000;
+    border-radius: 15px;
+  
+}
+#projects .p-box{
+  display: inline-flex;
+}
+#projects .p-box h3{
+  color: rgb(250, 215, 238);
+  text-transform:uppercase;
+  padding-top:9px ;
+}
+.p-box p{
+  margin-top: -10px;
+}
+@media (max-width:768px) {
+  #projects .p-box{
+    display: block;
+  }
+}
+/* Content Section */
+section {
+    padding: 100px 0;
+    text-align: center;
+    
+}
+
+section .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.content .msg-box{
+  width:70%;
+  height: 250px;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  display: grid;
+  position: relative;
+  margin-left: 19%;
+  background-image: linear-gradient(25deg,#db3bb9,rgb(223, 61, 115));
+  padding-bottom: 50px;
+}
+.content .msg-box input{
+  width: 60%;
+  border: none;
+  height: 2rem;
+  margin-top: 25px;
+  border-radius: 9px;
+  margin-left: 26%;
+}
+.content .msg-box input:last-child{
+  background-color: black;
+  color: #BFECFF;
+  cursor: pointer;
+}
+.content .msg-box input:last-child:hover{
+  background: #b324c0;
+  transform: scaleX(1.1);
+  color: #000;
+}
+.content .msg-box textarea{
+  width:160px;
+  border: none;
+  margin-left: 27%;
+  border-radius: 10px;
+  margin-top: 19px;
+}
+.content .icons{
+  margin-top: 55px;
+}
+.content .icon i{
+  width: 25px;
+  padding-left: 16px;
+}
+.content .icons i:hover{
+  width: 50px;
+  position: relative;
+}
+h1, h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siva</title>
+    <link rel="stylesheet" href="myrr.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    <!-- Home Section (Parallax) -->
+    <section id="home" class="parallax">
+        <div class="content">
+            <h1>I AM <span>SIVASAKTHI</span></h1>
+            <p>welcome to my website,scroll more...</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate and creative second-year BE CSE student with a strong foundation in Python, web development, and machine learning. My journey into technology is fueled by a love for problem-solving, logical thinking, and an eagerness to turn innovative ideas into reality.
+
+                Over the past year, I have honed my skills in HTML5, CSS, Python, artificial intelligence, and web design. I'm continually enhancing my expertise through projects that challenge me to think critically and apply my knowledge in practical ways. Whether it's designing user-friendly web applications or diving into the complexities of AI-driven solutions, I thrive on crafting impactful experiences..</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="projects" class="parallax">
+        <div class="content">
+            <h2>projects</h2>
+             <div class="p-box">
+               <div class="p1"><h3>project 1</h3>
+                <br>
+                <p>some ontents about my project 1,this is created by me</p>
+            </div> 
+            <div class="p1"><h3>project 1</h3>
+                <br>
+                <p>some ontents about my project 1,this is created by me</p>
+            </div> 
+            <div class="p1"><h3>project 1</h3>
+                <br>
+                <p>some ontents about my project 1,this is created by me</p>
+            </div> 
+            <div class="p1"><h3>project 1</h3>
+                <br>
+                <p>some ontents about my project 1,this is created by me</p>
+            </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="content">
+            <h2>Contact me</h2>
+            <form method="post">
+            <div class="msg-box">
+               <input type="text" placeholder="   Enter Your Name" name="Name" required>
+                <input type="email" name="email" placeholder="   Enter your email" required>
+               <textarea placeholder="  Enter your message" required></textarea>
+               <input type="submit" value="send message">
+            </div>
+            </form>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/kadhalkari?igsh=dnF6czB3YXpxMnhy"></a></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script>
+    
+       // script.js
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+  document.querySelector('.nav-links').classList.toggle('active');
+});
+
+
+    </script>
+</body>
+</html>
