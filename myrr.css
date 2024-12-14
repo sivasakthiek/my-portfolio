@@ -168,7 +168,9 @@ nav ul li {
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
-
+.textcontent a{
+  color:white;
+}
 .h1 {
   font-size: 16px;
   font-weight: bold;
