@@ -52,8 +52,7 @@ nav ul li {
 }
 
 .nav-links li a:hover {
-  background-image: linear-gradient(25deg, #db3bb9, rgb(223, 61, 115));
-  border-radius: 5px;
+  border-bottom: 2px solid white;
 }
 
 /* Mobile Styles */
@@ -72,14 +71,11 @@ nav ul li {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 180px;
     height: auto;
-    right: 50px;
-    background: rgba(255, 255, 255, 0.2);
+    right: 18%;
     width: 300px;
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(3px);
+    background: #353535;
   }
 
   .nav-links li {
@@ -88,16 +84,14 @@ nav ul li {
   }
 
   .nav-links li a {
-    color: black;
+    color: white;
     font-weight: 700;
     font-size: 23px;
   }
 
   .nav-links li a:hover {
-    background-image: linear-gradient(25deg, #da49c1, rgb(223, 61, 115));
+    border: 1px solid white;
     color: rgb(248, 202, 225);
-    border-radius: 15px;
-    text-transform: uppercase;
   }
 
   .nav-links.active {
@@ -131,9 +125,9 @@ nav ul li {
 #projects .card {
   width: 100%;
   max-width: 290px;
-  padding: 10px;
+  padding: 30px;
   background: #353535;
-  border-radius: 20px;
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,21 +140,15 @@ nav ul li {
 .card:hover {
   cursor: pointer;
   filter: brightness(1.1);
-  box-shadow: 0 0 5px #f74c8e,0 0 5px #f74c8e,0 0 4px #f74c8e,0 0 3px #f74c8e,0 0 3px #f74c8e,0 0 2px #f74c8e,0 0 5px #f74c8e;
   transform: scale(1.05);
 }
-
-.img {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-  background: linear-gradient(#d7cfcf, #f74c8e);
-  margin-bottom: 15px;
+.textContent .span{
+  color:darkcyan;
 }
-
-.card:hover > .img {
-  transition: 0.5s ease-in-out;
-  background-image: linear-gradient(349deg,pink,purple) ;
+#projects .card:hover{
+  backdrop-filter: blur(30px);
+  background: none;
+  border: .5px solid whitesmoke;
 }
 
 .textBox {
@@ -168,15 +156,30 @@ nav ul li {
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
-.textBox .textContent a{
-  color:white;
-}
+
 .h1 {
   font-size: 16px;
   font-weight: bold;
+  color:aliceblue;
+  border: 1px solid white;
   margin-bottom: 10px;
 }
+.textContent a{
+  text-decoration: none;
 
+}
+#about {
+  height: 80vh;
+}
+#about h2{
+  border: 1px solid black;
+  width: fit-content;
+  padding: 12px;
+  margin: auto;
+}
+#about p{
+  padding: 40px 80px 80px 60px;
+}
 .p {
   font-size: 12px;
   font-weight: lighter;
@@ -189,59 +192,38 @@ nav ul li {
     flex-direction: column;
     align-items: center;
   }
-
+ #projects {
+  height: 120vh;
+ }
   #projects .card {
     max-width: 90%;
-    margin: 20px auto;
+    margin: 15px auto;
+  }
+  #about {
+    height: 100vh;
+  }
+  #about p{
+    padding: 0px;
+    padding-top: 30px;
   }
 }
 
-/* Content Section */
+/* Contact Section */
 section {
   padding: 100px 0;
   text-align: center;
 }
 
-section .content {
-  max-width: 800px;
-  margin: 0 auto;
+#contact .icons .fa-brands {
+  margin-top: 50px;
+  color: #353535;
+  margin-left: 30px;
+  font-size: 25px;
+}
+#contact .icons .fa-brands:hover{
+  transform: scale(1.4);
 }
 
-.content .msg-box {
-  width: 70%;
-  height: 250px;
-  border-radius: 15px;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(25deg, #db3bb9, rgb(223, 61, 115));
-  margin: 0 auto 50px;
-  padding: 20px;
-}
-
-.content .msg-box input,
-.content .msg-box textarea {
-  width: 60%;
-  border: none;
-  height: 2rem;
-  margin: 10px auto;
-  border-radius: 9px;
-  display: block;
-}
-
-.content .msg-box input:last-child {
-  background-color: black;
-  color: #BFECFF;
-  cursor: pointer;
-}
-
-.content .msg-box input:last-child:hover {
-  background: #b324c0;
-  transform: scaleX(1.1);
-  color: #000;
-}
-
-.content .icons {
-  margin-top: 55px;
-}
 
 h1, h2 {
   font-size: 36px;
